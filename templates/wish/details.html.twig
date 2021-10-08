@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if(wish.isPublished) %}
+        Titre : {{ wish.title }}<br>
+        Auteur : {{ wish.author }}<br>
+        Date de création du souhait : {{ wish.dateCreated |date("d/m/Y") }}<br>
+        Description : {{ wish.description }}<br>
+    {% endif %}
+
+{% endblock %}
+
+{% block title %}
+    {{ wish.title }}
+{% endblock %}
+

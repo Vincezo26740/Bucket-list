@@ -1,0 +1,27 @@
+body{
+    font-family: 'Explora', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+#img_header {
+    width : 5vmin;
+    height : 5vmin;
+}
+
+#navigation{
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+}
+
+#navigation>ul{
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    list-style : none;
+}
+
+#navigation ul li{
+    width : 10vw;
+}

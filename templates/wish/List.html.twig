@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des souhaits à faire{% endblock %}
+
+{% block body %}
+    <h1>Liste de mes souhaits à faire :</h1>
+    {% for wish in wishes %}
+        {% if(wish.isPublished) %}
+            <a href="{{ path('Wish_Details',{'id': wish.id}) }}" title="{{ wish.title }}"> titre : {{ wish.title }} /
+                date : {{ wish.dateCreated |date("d/m/Y") }}</a><br>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

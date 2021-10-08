@@ -1,0 +1,9 @@
+<nav id="navigation">
+    <ul>
+        <li><a href="{{ path('main_home') }}" title="Retour Accueil"><img src="{{ asset('img/icones/logo.svg') }}" alt=" Logo de la société " id="img_header"></a></li>
+        <li><a href="{{ path('main_home') }}" title="">Accueil</a></li>
+        <li><a href="{{ path('main_AboutUs') }}" title=" What youy need t know About Us">About Us</a></li>
+        <li><a href="{{ path('Wish_List') }}" title=" See your wish List">Wish List</a></li>
+        <li><a href="#" title=""></a></li>
+    </ul>
+</nav>
